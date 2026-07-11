@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGG - Registro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Sistema de Gestión de Gastos</h1>
+
+    <button id="btnTema">
+        🌙 Modo Día/Noche
+    </button>
+</header>
+
+
+<main>
+
+<h2>Crear cuenta</h2>
+
+<form id="formRegistro">
+
+<label for="nombre">Nombre/s</label>
+<input type="text" id="nombre" required>
+
+
+<label for="apellido">Apellido/s</label>
+<input type="text" id="apellido" required>
+
+
+<label for="fecha">Fecha de nacimiento</label>
+<input type="date" id="fecha" required>
+
+
+<label for="emailRegistro">Correo electrónico</label>
+<input type="email" id="emailRegistro" required>
+
+
+<label for="passwordRegistro">Contraseña</label>
+
+<input 
+type="password"
+id="passwordRegistro"
+required
+>
+
+
+<button type="button" id="verPasswordRegistro">
+👁 Mostrar contraseña
+</button>
+
+
+<ul id="requisitos">
+
+<li id="longitud">❌ Mínimo 8 caracteres</li>
+
+<li id="mayuscula">❌ Una letra mayúscula</li>
+
+<li id="minuscula">❌ Una letra minúscula</li>
+
+<li id="numero">❌ Un número</li>
+
+<li id="especial">❌ Un símbolo especial</li>
+
+</ul>
+
+
+<label for="repetirPassword">
+Repetir contraseña
+</label>
+
+<input
+type="password"
+id="repetirPassword"
+required
+>
+
+
+<button 
+type="submit"
+id="btnRegistrar"
+disabled
+>
+Registrarse
+</button>
+
+
+</form>
+
+
+<br>
+
+<a href="index.html">
+Volver al inicio
+</a>
+
+
+</main>
+
+
+<script src="js/usuarios.js"></script>
+<script src="js/tema.js"></script>
+<script src="js/registro.js"></script>
+
+</body>
+
+</html>
